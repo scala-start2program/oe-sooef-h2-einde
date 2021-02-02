@@ -1,0 +1,31 @@
+﻿<Window x:Class="Scala.Oefening02.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scala.Oefening02.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox x:Name="lstFietsen" HorizontalAlignment="Left" Height="346" Margin="50,43,0,0" VerticalAlignment="Top" Width="205" SelectionChanged="lstFietsen_SelectionChanged"/>
+        <GroupBox Header="Details" HorizontalAlignment="Left" Height="346" Margin="282,43,0,0" VerticalAlignment="Top" Width="326">
+            <Grid>
+                <Label Content="Merk : " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="lblMerk" Content="" Background="OldLace" HorizontalAlignment="Left" Margin="100,10,0,0" VerticalAlignment="Top" Width="204"/>
+                <Label Content="Serie : " HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
+                <Label Content="Verkoopprijs € : " HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
+                <Label Content="Verkoopprijs £ : " HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
+                <Label Content="Verkoopprijs $ : " HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
+                <Label Content="Elektrisch : " HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top"/>
+                <Label Content="Aantal wielen : " HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="lblSerie" Content="" Background="OldLace" HorizontalAlignment="Left" Margin="100,40,0,0" VerticalAlignment="Top" Width="204"/>
+                <Label x:Name="lblVerkoopprijsEuro" HorizontalContentAlignment="Right" Content="" Background="OldLace" HorizontalAlignment="Left" Margin="100,70,0,0" VerticalAlignment="Top" Width="204"/>
+                <Label x:Name="lblElektrisch" Content="" Background="OldLace" HorizontalAlignment="Left" Margin="100,160,0,0" VerticalAlignment="Top" Width="204"/>
+                <Label x:Name="lblAantalWielen" Content="" Background="OldLace" HorizontalAlignment="Left" Margin="100,190,0,0" VerticalAlignment="Top" Width="204"/>
+                <Label x:Name="lblVerkoopprijsPond" Content=""  HorizontalContentAlignment="Right" Background="OldLace" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" Width="204"/>
+                <Label x:Name="lblVerkoopprijsDollar" Content=""  HorizontalContentAlignment="Right" Background="OldLace" HorizontalAlignment="Left" Margin="100,130,0,0" VerticalAlignment="Top" Width="204"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
